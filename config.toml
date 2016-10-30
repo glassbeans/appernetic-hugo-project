@@ -2,7 +2,7 @@ baseurl = "http://www.glassbeans.com/"
 languageCode = "en-us"
 title = "glass beans - a personal blog on seeing through the numbers"
 theme = "hugo-future-imperfect"
-preserveTaxonomyNames = true
+preserveTaxonomyNames = false
 paginate = 3
 disqusShortname = "shortname"
 googleAnalytics = "UA-86503745-1"
@@ -11,9 +11,9 @@ googleAnalytics = "UA-86503745-1"
     # Sets the meta tag description, usually reserved for the main page
     description          = "Personal views on how machine learning and AI will impact how we look into businesses"
     # This will appear on the top left of the navigation bar
-    navbarTitle          = "glass beans"
+    navbarTitle          = "glassbeans"
     # Social media buttons that appear on the sidebar
-    socialAppearAtTop    = false
+    socialAppearAtTop    = true
     socialAppearAtBottom = true
     # set this to the section name if section is not post
     viewMorePostLink     = "/blog/"
@@ -81,28 +81,11 @@ googleAnalytics = "UA-86503745-1"
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
 # The social media icons will appear on the sidebar
 [social]
-    github          = "jpescador"
-    bitbucket       = ""
-    jsfiddle        = ""
-    codepen         = ""
-    foursquare      = ""
-    dribbble        = ""
-    deviantart      = ""
-    behance         = ""
-    flickr          = ""
-    instagram       = ""
-    youtube         = ""
-    vimeo           = ""
     vine            = ""
     medium          = ""
     wordpress       = ""
-    tumblr          = ""
-    xing            = ""
     linkedin        = ""
-    slideshare      = ""
-    stackoverflow   = ""
     reddit          = ""
-    pinterest       = ""
     googleplus      = ""
     facebook        = ""
     facebook_admin  = ""
