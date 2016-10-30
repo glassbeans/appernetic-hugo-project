@@ -1,6 +1,6 @@
-baseurl = "http://hugo.spf13.com/"
+baseurl = "http://www.glassbeans.com/"
 languageCode = "en-us"
-title = "Hugo Future Imperfect"
+title = "glassbeans - a personal blog on seeing through the numbers"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
@@ -9,9 +9,9 @@ googleAnalytics = ""
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
-    description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
+    description          = "Personal views on how machine learning and AI will impact how we look into businesses"
     # This will appear on the top left of the navigation bar
-    navbarTitle          = "Future Imperfect"
+    navbarTitle          = "glassbeans"
     # Social media buttons that appear on the sidebar
     socialAppearAtTop    = true
     socialAppearAtBottom = true
@@ -41,7 +41,7 @@ googleAnalytics = ""
 # parms.intro will appear on the sidebar
 # This is optional, but it's suggested to use
 [params.intro]
-    header    = "Hugo Future Imperfect"
+    header    = "glassbeans"
 
     paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
 
