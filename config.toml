@@ -1,4 +1,4 @@
-baseurl = "http://glassbeans.github.io/"
+baseurl = "http://hugo.spf13.com/"
 languageCode = "en-us"
 title = "Hugo Future Imperfect"
 theme = "hugo-future-imperfect"
