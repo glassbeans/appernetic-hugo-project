@@ -1,143 +1,90 @@
-/*
-	Future Imperfect by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+$(document).ready(function() {
+    // Employ Masonry layout configuration
+    var $container = $(".masonry-flex-container")
+    $container.imagesLoaded().always(function(instance) {
+        $container.masonry({
+            itemSelector: ".flex-item",
+            columnWidth: ".flex-item",
+            percentPosition: true,
+            transitionDuration: 0 /* Disable animation of transitions */
+        });
 
-(function($) {
+        $(window).resize(function() {
+            $container.masonry();
+        });
+    });
 
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
-	});
+    $container.each(function() {
+        this.addEventListener("load", function() {
+            $container.masonry();
+        }, true);
+    });
 
-	$(function() {
+    // Provide infinite scroll if enabled
+    var $infiniteContainer = $(".masonry-flex-container.infinite-scroll").infinitescroll({
+        navSelector: "ul.pagination",
+        nextSelector: "ul.pagination a:last",
+        itemSelector: ".masonry-flex-container .flex-item",
+        loadingImg: "/img/loader.gif",
+        loading: {
+            finishedMsg: "",
+            msgText: "",
+            img: "/img/loader.gif"
+        }
+    }, function(elements) {
+        var $elements = $(elements);
+        $elements.imagesLoaded(function() {
+            $infiniteContainer.masonry("appended", $elements);
+        });
+    });
 
-		var	$window = $(window),
-			$body = $('body'),
-			$menu = $('#menu'),
-			$shareMenu = $('#share-menu'),
-			$sidebar = $('#sidebar'),
-			$main = $('#main');
+    // Attach our lightbox handlers
+    $("[data-lightbox-id]").each(function() {
+        var element = $(this);
+        var lightboxId = element.data("lightbox-id");
+        var lightbox = $("#" + lightboxId);
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+        var lightboxProperties = {
+            "padding": "70px",
+            "width": "100%",
+            "height": "100%",
+            "background-color": "rgba(0, 0, 0, 0.95)",
+            "color": "white",
+            "position": "fixed",
+            "top": "0px",
+            "left": "0px",
+            "z-index": "999"
+        };
+        lightbox.css(lightboxProperties);
+        lightbox.hide();
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+        var lightboxCloseButtonProperties = {
+            "position": "absolute",
+            "top": "0px",
+            "left": "0px",
+            "z-index": "999",
+            "cursor": "pointer"
+        };
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+        var lightboxCloseButton = $("<i/>", {
+            "class": "fa fa-close fa-5x",
+            "click": function(e) {
+                e.preventDefault();
+                lightbox.hide("fast");
+            }
+        });
+        lightboxCloseButton.css(lightboxCloseButtonProperties);
+        lightboxCloseButton.appendTo(lightbox);
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
+        element.click(function(e) {
+            e.preventDefault();
+            lightbox.show("fast");
+        });
+    });
 
-		// IE<=9: Reverse order of main and sidebar.
-			if (skel.vars.IEVersion <= 9)
-				$main.insertAfter($sidebar);
+    // Provide syntax highlighting if highlight.js included
+    if (typeof hljs !== "undefined") {
+        hljs.initHighlightingOnLoad();
+    }
+});
 
-		$menu.appendTo($body);
-		$shareMenu.appendTo($body);
-
-		$menu.panel({
-			delay: 500,
-			hideOnClick: true,
-			hideOnEscape: true,
-			hideOnSwipe: true,
-			resetScroll: true,
-			resetForms: true,
-			side: 'right',
-			target: $body,
-			visibleClass: 'is-menu-visible'
-		});
-
-		$shareMenu.panel({
-			delay: 500,
-			hideOnClick: true,
-			hideOnEscape: true,
-			hideOnSwipe: true,
-			resetScroll: true,
-			resetForms: true,
-			side: 'right',
-			target: $body,
-			visibleClass: 'is-share-visible'
-		});
-
-		// Menu.
-			/*$menu
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right',
-					target: $body,
-					visibleClass: 'is-menu-visible'
-				});*/
-
-		// Search (header).
-			var $search = $('#search'),
-				$search_input = $search.find('input');
-
-			$body
-				.on('click', '[href="#search"]', function(event) {
-
-					event.preventDefault();
-
-					// Not visible?
-						if (!$search.hasClass('visible')) {
-
-							// Reset form.
-								$search[0].reset();
-
-							// Show.
-								$search.addClass('visible');
-
-							// Focus input.
-								$search_input.focus();
-
-						}
-
-				});
-
-			$search_input
-				.on('keydown', function(event) {
-
-					if (event.keyCode == 27)
-						$search_input.blur();
-
-				})
-				.on('blur', function() {
-					window.setTimeout(function() {
-						$search.removeClass('visible');
-					}, 100);
-				});
-
-		// Intro.
-			var $intro = $('#intro');
-
-			// Move to main on <=large, back to sidebar on >large.
-				skel
-					.on('+large', function() {
-						$intro.prependTo($main);
-					})
-					.on('-large', function() {
-						$intro.prependTo($sidebar);
-					});
-
-	});
-
-})(jQuery);
