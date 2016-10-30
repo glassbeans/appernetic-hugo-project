@@ -1,19 +1,19 @@
 baseurl = "http://www.glassbeans.com/"
 languageCode = "en-us"
-title = "glassbeans - a personal blog on seeing through the numbers"
+title = "glass beans - a personal blog on seeing through the numbers"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "shortname"
-googleAnalytics = ""
+googleAnalytics = "Personal views on how machine learning and AI will impact how we look into businesses"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
     description          = "Personal views on how machine learning and AI will impact how we look into businesses"
     # This will appear on the top left of the navigation bar
-    navbarTitle          = "glassbeans"
+    navbarTitle          = "glass beans"
     # Social media buttons that appear on the sidebar
-    socialAppearAtTop    = true
+    socialAppearAtTop    = false
     socialAppearAtBottom = true
     # set this to the section name if section is not post
     viewMorePostLink     = "/blog/"
@@ -73,14 +73,9 @@ googleAnalytics = ""
     weight = 1
 
 [[menu.main]]
-    name = "Categories"
-    url = "/categories"
-    weight = 2
-
-[[menu.main]]
     name = "About"
     url = "/about"
-    weight = 3
+    weight = 2
 
 # Insert your username and the icon will apear on the page as long as
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
