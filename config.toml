@@ -1,15 +1,15 @@
 baseurl = "http://www.glassbeans.com/"
 languageCode = "en-us"
-title = "glass beans - a personal blog on seeing through the numbers"
+title = "Glassbeans - Personal views on how machine learning and AI will help us see through business"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = false
 paginate = 3
-disqusShortname = "shortname"
+disqusShortname = "glassbeans"
 googleAnalytics = "UA-86503745-1"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
-    description          = "Personal views on how machine learning and AI will impact how we look into businesses"
+    description          = "Personal views on how machine learning and AI will help us see through business"
     # This will appear on the top left of the navigation bar
     navbarTitle          = "glassbeans"
     # Social media buttons that appear on the sidebar
@@ -20,7 +20,7 @@ googleAnalytics = "UA-86503745-1"
 
 # Optional Params
     categoriesByCount    = true
-    includeReadingTime   = false
+    includeReadingTime   = true
     # The set of favicons used are based on the write-up from this link:
     # https://github.com/audreyr/favicon-cheat-sheet
     # Please see the favicon partial template for more information
@@ -43,9 +43,9 @@ googleAnalytics = "UA-86503745-1"
 [params.intro]
     header    = "glassbeans"
 
-    paragraph = "Personal views on how machine learning and AI will impact how we look into businesses"
+    paragraph = "Personal views on how machine learning and AI will help us see through business"
 
-    about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+    about     = "I am a Chartered Accountant who for many years provided consulting services in investigating financial frauds. In the past few years, I have shifted my focus to data analytics: the extraction of insights from data. My interest has been the application of machine learning and artificial intelligence to accounting, consulting, and tax services provided by professional services firms."
 
 # This will also appear on the sidebar.
 # A width of less than 100px is recommended
@@ -54,10 +54,10 @@ googleAnalytics = "UA-86503745-1"
     src       = "/img/main/logo.jpg"
     # modify your picture in the shape of a circle or
     # future imperfect's hexagonal shape
-    circle    = false
-    imperfect = true
-    width     = ""
-    alt       = "Hugo Future Imperfect"
+    circle    = true
+    imperfect = false
+    width     = "100"
+    alt       = "glassbeans"
 
 # Adjust the amount of recent posts on the sidebar.
 # This is optional. The default value 5 will be used
@@ -69,20 +69,25 @@ googleAnalytics = "UA-86503745-1"
 [[menu.main]]
     name = "Blog"
     url = "/blog"
-    identifier = "fa fa-newspaper-o"
+#   identifier = "fa fa-newspaper-o"
     weight = 1
+
+[[menu.main]]
+    name = "Categories"
+    url = "/categories"
+    weight = 2
 
 [[menu.main]]
     name = "About"
     url = "/about"
-    weight = 2
+    weight = 3
 
 # Insert your username and the icon will apear on the page as long as
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
 # The social media icons will appear on the sidebar
 [social]
     vine            = ""
-    medium          = ""
+    medium          = "glassbeans"
     wordpress       = ""
     linkedin        = "eric-au"
     reddit          = "glassbeans"
