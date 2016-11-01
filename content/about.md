@@ -2,28 +2,24 @@
 title = "About Hugo"
 date = "2014-04-09"
 +++
++++
+title = "About Eric Au"
++++
+<img src="/img/main/profile.jpg" width="132">
 
-Hugo is a static site engine written in Go.
+I have worked in a client-facing role in the professional services industry for over ten years. Working at a professional services firm has provided me with some of the broadest work experiences available, starting with assurance/audit but quickly moving to leading teams in a wide range of consulting areas including valuations, risk management, and complex accounting litigation. During this time, the focus of my work was largely in forensic accounting and financial frauds. I currently lead research and culture in the area of data analytics for the Canadian arm of an international provider of accounting and other professional services.
 
+My formal education includes:
 
-It makes use of a variety of open source projects including:
+* Bachelor's degree in mathematics
+* Master's degree in accounting
+* Designation as a Canadian Chartered Accountant
+* Designation as a Canadian Chartered Professional Accountant
+* Designation as a Chartered Business Valuator
+* Designation as a Certified Internal Auditor
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+I have always been one of the most data-driven professional in practice. As such, nothing has excited me more than the business community’s willingness to embrace data and the more effective utilization of data to provide insights. In particular, the increased attention to data science and machine learning have allowed me to return to my roots, blending my domain knowledge in a broad range of consulting areas with my academic background in mathematics.
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+There is tremendous potential for the professional services industry and the accounting profession to take advantage of these advances. It will fundamentally change the way we work, and allow us to find new insights for our clients that were never before possible.
 
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+If you have accounting or financial data which you would like to explore, or if you are interested in working together to advance this field, I would love to hear from you.
