@@ -1,13 +1,4 @@
 +++
-<<<<<<< HEAD
-title = "about"
-draft = false
-date = "2016-11-09T16:12:00Z"
-
-+++
-
-<img src="/img/main/profile.jpg" width="132">
-=======
 title = "About Eric Au"
 +++
 <img src="/img/main/profile.jpg" width="132">
