@@ -11,7 +11,6 @@ date = "2016-11-09T16:12:00Z"
 title = "About Eric Au"
 +++
 <img src="/img/main/profile.jpg" width="132">
->>>>>>> e4937d0636507f9fd0ce8a55ef7d0fae46c7cb86
 
 I have worked in a client-facing role in the professional services industry for over ten years. Working at a professional services firm has provided me with some of the broadest work experiences available, starting with assurance/audit but quickly moving to leading teams in a wide range of consulting areas including valuations, risk management, and complex accounting litigation. During this time, the focus of my work was largely in forensic accounting and financial frauds. I currently lead research and culture in the area of data analytics for the Canadian arm of an international provider of accounting and other professional services.
 
