@@ -96,4 +96,8 @@ googleAnalytics = "UA-86503745-1"
     facebook_admin  = ""
     twitter_domain  = ""
     twitter         = "glassbeans"
+<<<<<<< HEAD
     email           = "eric@ericau.ca"
+=======
+    email           = "eric@ericau.ca"
+>>>>>>> e4937d0636507f9fd0ce8a55ef7d0fae46c7cb86
