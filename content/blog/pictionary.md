@@ -4,8 +4,7 @@ description = "Using Google's Pictionary Technology to Find Risky Customers"
 featuredpath = ""
 date = "2016-11-18T19:38:27Z"
 featuredalt = ""
-categories = [
-]
+categories = ["Neural Networks", "Risk"]
 linktitle = ""
 featured = "sketchers.jpg"
 title = "Using Google's Pictionary Technology to Find Risky Customers"
