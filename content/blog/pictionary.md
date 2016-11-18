@@ -16,6 +16,8 @@ author = "Eric Au"
 
 Google this week released a game called Quick, Draw! where you, the drawer, is given an object that you need to draw and Google’s AI will try to guess what it is. Here’s what happened when I attempted a truck:
  
+<img src="/img/main/Truck doodle.jpg" width="600">
+
 Yeah, I draw like a five-year-old. For those that are interested, you can play the game [here][1].
 
 I could have drawn the truck a million ways. It could have been drawn from a different angle, with varying level of details, and with various proportions since I’m sketching this with a desktop mouse. Despite these variations, Google’s technology was able to recognize it.
@@ -34,6 +36,8 @@ As you can imagine, it doesn’t quite work that way.
 
 If you go back and look my truck doodle, you’ll see that the results page says “You drew this, and the neural net recognized it.”
  
+<img src="/img/main/Results.jpg">
+
 A neural net is a technique used to “learn” outcomes if you can give it enough examples. Feed neural nets enough drawings of trucks, and over time it will recognize that it’s a truck rather than a car or a turtle.
 
 Coming back to risk, if we can feed a model enough “drawings” of risky customers, over time we can get a very accurate prediction of which new customers are considered high-risk. The implication of this is we can get a more precise assessment of customer risk, thereby lowering the risk for the overall organization. More than that, we will also be able to reduce the time needed to scrutinize customers classified as high-risk that shouldn’t have been classified that way in the first place.
