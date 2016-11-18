@@ -1,13 +1,13 @@
 +++
 type = "post"
-description = ""
+description = "Using Google's Pictionary Technology to Find Risky Customers"
 featuredpath = ""
 date = "2016-11-18T19:38:27Z"
 featuredalt = ""
 categories = [
 ]
 linktitle = ""
-featured = ""
+featured = "sketchers.jpg"
 title = "Using Google's Pictionary Technology to Find Risky Customers"
 author = "Eric Au"
 
