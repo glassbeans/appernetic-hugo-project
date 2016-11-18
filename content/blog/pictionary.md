@@ -8,8 +8,37 @@ categories = [
 ]
 linktitle = ""
 featured = ""
-title = "pictionary"
-author = ""
+title = "Using Google's Pictionary Technology to Find Risky Customers"
+author = "Eric Au"
 
 +++
+Does anyone still play Pictionary? The guessing game where someone on your team draws a picture, and you have to guess what it is. I was an okay Pictionary player. I think I was a better ‘guesser’ than a ‘drawer.’ I could draw inanimate objects well enough, but if I was ever asked to draw something more complicated like a cat or giraffe, things get ugly. Anyone remember that old episode of The Simpsons where Millhouse’s dad tried drawing “dignity”?
 
+Google this week released a game called Quick, Draw! where you, the drawer, is given an object that you need to draw and Google’s AI will try to guess what it is. Here’s what happened when I attempted a truck:
+ 
+Yeah, I draw like a five-year-old. For those that are interested, you can play the game [here][1].
+
+I could have drawn the truck a million ways. It could have been drawn from a different angle, with varying level of details, and with various proportions since I’m sketching this with a desktop mouse. Despite these variations, Google’s technology was able to recognize it.
+
+Why am I talking about an online Google sketch game? 
+
+Well, this week I was asked by one of our clients about what data analytics could do for their business. The business is an online brokerage, and the people I was speaking to were in the compliance department. One of their key responsibilities is to assess customer risk. 
+
+Risk is one of those areas where predictive analytics has a great use case because it is highly subjective and is dependent on professional judgment. Compliance departments usually already have ways they assess customer risk. Most commonly, risk is determined using a combination of thresholds and criteria filters. For example, if a customer worked in what our client deemed as a high-risk occupation, the compliance department might want to flag that customer as high-risk. These criteria and thresholds can be quite costly and time-consuming to set up because it takes time for a knowledgeable professional to think through all the possible scenarios that don’t add up and then write a rule for it. 
+
+For example, if this business looks through their customer database and sees an elementary school teacher depositing $5,000 every week, maybe they would think it’s a little unusual. Maybe they would want their system to screen that person. But if you start thinking about all the different scenarios that could be considered unusual, the complexity and sheer quantity of the rules you’d need to write would get very messy very fast.
+
+Let’s go back to my doodle of a truck. How do you think Google recognized my drawing? Maybe they hired an army of interns to go through a dictionary and program in complex rules for every object? “Hey Billy, welcome to Google, today we’re going to have you write down every conceivable way someone could draw a truck. After that, we’re going to move you to cars. If you do a great job, we’ll get you to vans as well”. 
+
+As you can imagine, it doesn’t quite work that way.
+
+If you go back and look my truck doodle, you’ll see that the results page says “You drew this, and the neural net recognized it.”
+ 
+A neural net is a technique used to “learn” outcomes if you can give it enough examples. Feed neural nets enough drawings of trucks, and over time it will recognize that it’s a truck rather than a car or a turtle.
+
+Coming back to risk, if we can feed a model enough “drawings” of risky customers, over time we can get a very accurate prediction of which new customers are considered high-risk. The implication of this is we can get a more precise assessment of customer risk, thereby lowering the risk for the overall organization. More than that, we will also be able to reduce the time needed to scrutinize customers classified as high-risk that shouldn’t have been classified that way in the first place.
+
+There are still hurdles that we will need to overcome, including regulatory restrictions and the transparency of using advanced algorithms. However, as the utilization of these technologies becomes increasingly widespread, I believe we will begin to see more and more organizations adopt these methods as the preferred risk assessment approach.
+
+
+  [1]: https://quickdraw.withgoogle.com/
