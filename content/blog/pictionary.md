@@ -1,8 +1,8 @@
 +++
 type = "post"
 description = "Using Google's Pictionary Technology to Find Risky Customers"
-featuredpath = ""
-date = "2016-11-18T19:38:27Z"
+featuredpath = "date"
+date = "2016-11-18"
 featuredalt = ""
 categories = ["Neural Networks", "Risk"]
 linktitle = ""
