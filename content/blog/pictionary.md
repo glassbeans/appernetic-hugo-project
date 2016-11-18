@@ -41,7 +41,7 @@ A neural net is a technique used to “learn” outcomes if you can give it enou
 
 Coming back to risk, if we can feed a model enough “drawings” of risky customers, over time we can get a very accurate prediction of which new customers are considered high-risk. The implication of this is we can get a more precise assessment of customer risk, thereby lowering the risk for the overall organization. More than that, we will also be able to reduce the time needed to scrutinize customers classified as high-risk that shouldn’t have been classified that way in the first place.
 
-There are still hurdles that we will need to overcome, including regulatory restrictions and the transparency of using advanced algorithms. However, as the utilization of these technologies becomes increasingly widespread, I believe we will begin to see more and more organizations adopt these methods as the preferred risk assessment approach.
+There are still hurdles that we will need to overcome, including regulatory restrictions and the transparency of using advanced algorithms. However, as the utilization of these technologies becomes increasingly widespread, I believe we will begin to see more and more organizations adopt these methods as their preferred risk assessment approach.
 
 
   [1]: https://quickdraw.withgoogle.com/
